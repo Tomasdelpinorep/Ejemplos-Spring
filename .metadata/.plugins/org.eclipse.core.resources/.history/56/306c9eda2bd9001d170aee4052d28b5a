@@ -1,0 +1,27 @@
+package com.example.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+
+public class AlmecenAlumnos {
+
+	private List<Alumno> almacen;
+	
+	@PostConstruct
+	public void init() {
+		almacen = new ArrayList<>();
+		
+		almacen.add(
+				Alumno.builder()
+				.nombre("Tomas")
+				.apellidos("del Pino")
+				.fechaNacimiento("01/02/2003"));
+	}
+	
+}

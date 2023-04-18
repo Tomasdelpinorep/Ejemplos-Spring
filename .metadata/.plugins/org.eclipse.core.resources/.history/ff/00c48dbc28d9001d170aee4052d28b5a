@@ -1,0 +1,20 @@
+package com.example.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ServicioAlumnos {
+	
+	private AlmecenAlumnos almacen;
+
+	public List<String> cumpleHoy(){
+		List<String> result = new ArrayList<>();
+		
+		almacen.findAll().stream()
+		
+		return result;
+	}
+}

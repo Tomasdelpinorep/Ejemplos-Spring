@@ -1,0 +1,6 @@
+package com.salesianostriana.dam.e01holamundo;
+
+public class Persona {
+
+	private String nombre,apellido;
+}

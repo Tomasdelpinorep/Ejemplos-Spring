@@ -1,0 +1,16 @@
+package com.salesianostriana.dam.e01holamundo;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class MainDeMentira {
+
+	@Autowired
+	private Repositorio repo;
+	
+	@PostConstruct
+	public void ejecutar() {
+		
+	}
+}
